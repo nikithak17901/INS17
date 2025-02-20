@@ -195,3 +195,32 @@ O + E = S
 Encrypted message: "RIJVS"
 
 The Vigenère cipher demonstrates a fundamental cryptographic principle and serves as an excellent introduction to more advanced encryption techniques.
+
+
+Introduction to Feistel Network 
+
+The Feistel network is a structure designed for building symmetric key block ciphers. It divides input data into two halves and processes them through several rounds of transformation, where the same function is applied for both encryption and decryption.
+
+Key Features of Feistel Network
+
+Simplicity: Uses the same function for both encryption and decryption, making the design efficient.
+
+Divide and Conquer: The input data is split into two parts, facilitating easier manipulation and transformation.
+
+Symmetric Operation: The same keys are used for both processes, which underscores its symmetric nature.
+
+Reversible: The Feistel structure ensures that if you can encrypt, you can also decrypt, utilizing the same function with different key arrangements.
+
+Security: It allows for a complex key schedule and multiple rounds, increasing the difficulty of cryptanalysis.
+
+How It Works
+
+Input Splitting: The plaintext (input data) is divided into two halves, typically called the left half (L) and the right half (R).
+
+Rounds: The Feistel network operates through multiple rounds (typically 16 in DES):
+
+In each round, a round function (using a subkey) is applied to one half (usually the right half).
+The output of this round function is then combined with the other half (using XOR).
+The halves are swapped after each round, except in the final round.
+
+Output: After the last round, the two halves are combined to produce the ciphertext.
