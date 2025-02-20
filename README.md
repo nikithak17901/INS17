@@ -114,3 +114,43 @@ p = 'abcdefghijklmnopqrstuvwxyz' (Plaintext alphabet)
 ch = 'QWERTYUIOPASDFGHJKLZXCVBNM' (Ciphertext alphabet)
 
 Each letter from the input is replaced with its corresponding letter from the predefined mapping during encryption, and vice versa during decryption.
+
+
+Playfair-Cipher
+
+A Python implementation of the Playfair Cipher for encrypting and decrypting text using a key-based 5x5 matrix
+
+Introduction
+The Playfair Cipher is a digraph substitution cipher that encrypts pairs of letters in plaintext using a 5x5 key matrix. It replaces repeating letters and adjusts odd-length messages by adding filler characters.
+
+Features
+✅ Encrypts text using a Playfair matrix.
+
+✅ Decrypts ciphertext back to its original plaintext.
+
+✅ Handles odd-length plaintext by appending an 'X'.
+
+✅ Ignores spaces and treats 'J' as 'I'.
+
+✅ Simple Python implementation with easy-to-follow logic.
+
+How It Works
+Matrix Creation: A 5x5 matrix is generated using the key.
+Position Finding: Each letter's position is determined in the matrix.
+Encryption: Letters in the same row/column shift accordingly; otherwise, a rectangle swap is performed.
+Decryption: Reverse of encryption logic 
+
+Example
+$ python playfair_cipher.py
+
+Enter the plain text: instruments
+
+Enter the key: monarchy
+
+Encrypted message: GATLMZCLRQXA
+
+Enter the cipher text: gatlmzclrqxa
+
+Enter the key: monarchy
+
+Decrypted message: INSTRUMENTSX
