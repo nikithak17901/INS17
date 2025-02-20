@@ -154,3 +154,44 @@ Enter the cipher text: gatlmzclrqxa
 Enter the key: monarchy
 
 Decrypted message: INSTRUMENTSX
+
+
+Vigenère Cipher
+
+The Vigenère cipher is a method of encrypting alphabetic text using a keyword. It employs a form of polygraphic substitution, shifting each letter in the plaintext based on the corresponding letter in the keyword. This makes it more secure than simple ciphers like the Caesar cipher.
+
+How It Works
+Keyword Selection: Choose a keyword.
+Align Text: Repeat the keyword to match the length of the plaintext.
+
+Encryption:
+For each letter in the plaintext, shift it forward in the alphabet based on the position of the corresponding keyword letter (A=0, B=1, ..., Z=25).
+
+Decryption: Shift backwards using the same keyword.
+
+Features
+Polygraphic Substitution: Uses multiple substitutions based on a keyword.
+Increased Security: More secure than basic ciphers due to variable shifting.
+Simplicity: Easy to implement and understand.
+
+Example
+Plaintext: "HELLO"
+Keyword: "KEY"
+
+Align the Text:
+
+Plaintext: H E L L O
+Keyword: K E Y K E
+Corresponding Shifts:
+
+K = 10, E = 4, Y = 24
+Encrypt the Text:
+
+H + K = R
+E + E = I
+L + Y = J
+L + K = V
+O + E = S
+Encrypted message: "RIJVS"
+
+The Vigenère cipher demonstrates a fundamental cryptographic principle and serves as an excellent introduction to more advanced encryption techniques.
