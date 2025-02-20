@@ -4,8 +4,11 @@ This project demonstrates the Caesar Cipher, a basic encryption technique where 
 
 🔹 Features
 ✅ Encrypts plaintext using a shift key
+
 ✅ Decrypts ciphertext back to original text
+
 ✅ Works with both uppercase and lowercase letters
+
 ✅ Keeps special characters unchanged
 
 📌 How It Works
@@ -17,7 +20,9 @@ Non-alphabet characters remain unchanged.
 
 📂 Files Included
 📜 CaesarCipher.ipynb - Jupyter Notebook with the complete implementation
+
 📜 encrypt() - Function to encrypt text
+
 📜 decrypt() - Function to decrypt text
 
 🚀 Quick Start Prerequisites
@@ -84,3 +89,28 @@ Notes
 The key matrix should be invertible modulo 26 for decryption.
 The script currently only supports encryption.
 Ensure that the key matrix is square (n × n).
+
+
+
+Monoalphabetic-Cipher
+A simple and user-friendly implementation of the Monoalphabetic Cipher in Python for encryption and decryption of messages using a fixed substitution alphabet.
+Introduction
+The Monoalphabetic Cipher is a type of substitution cipher where each letter in the plaintext is replaced with a corresponding letter from a predefined mapping. This implementation provides an easy-to-use interface for encrypting and decrypting messages.
+
+Features
+✅ Encrypts plaintext messages using a predefined substitution alphabet.
+
+✅ Decrypts ciphertext messages back to the original plaintext.
+
+✅ Preserves non-alphabetic characters without modification.
+
+✅ Simple and easy-to-use Python script.
+
+How It Works
+The script defines two mappings:
+
+p = 'abcdefghijklmnopqrstuvwxyz' (Plaintext alphabet)
+
+ch = 'QWERTYUIOPASDFGHJKLZXCVBNM' (Ciphertext alphabet)
+
+Each letter from the input is replaced with its corresponding letter from the predefined mapping during encryption, and vice versa during decryption.
