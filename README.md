@@ -65,7 +65,7 @@ udymts	5	python
 Hill Cipher Encryption in Python
 This is a simple implementation of the Hill Cipher encryption algorithm using NumPy.
 
-How It Works
+📌How It Works
 The program encrypts a given plaintext using matrix multiplication.
 It converts characters to numerical values (A=0, B=1, ..., Z=25).
 If the plaintext length is not a multiple of the key matrix size, it is padded with X.
@@ -79,7 +79,7 @@ pip install numpy
 Usage
 Run the script and enter the plaintext to encrypt.
 
-Example
+🎯Example
 
 Input:  HELLO
 
@@ -106,7 +106,7 @@ Features
 
 ✅ Simple and easy-to-use Python script.
 
-How It Works
+📌How It Works
 The script defines two mappings:
 
 p = 'abcdefghijklmnopqrstuvwxyz' (Plaintext alphabet)
@@ -134,13 +134,13 @@ Features
 
 ✅ Simple Python implementation with easy-to-follow logic.
 
-How It Works
+📌How It Works
 Matrix Creation: A 5x5 matrix is generated using the key.
 Position Finding: Each letter's position is determined in the matrix.
 Encryption: Letters in the same row/column shift accordingly; otherwise, a rectangle swap is performed.
 Decryption: Reverse of encryption logic 
 
-Example
+🎯Example
 $ python playfair_cipher.py
 
 Enter the plain text: instruments
@@ -160,7 +160,7 @@ Vigenère Cipher
 
 The Vigenère cipher is a method of encrypting alphabetic text using a keyword. It employs a form of polygraphic substitution, shifting each letter in the plaintext based on the corresponding letter in the keyword. This makes it more secure than simple ciphers like the Caesar cipher.
 
-How It Works
+📌How It Works
 Keyword Selection: Choose a keyword.
 Align Text: Repeat the keyword to match the length of the plaintext.
 
@@ -170,11 +170,13 @@ For each letter in the plaintext, shift it forward in the alphabet based on the 
 Decryption: Shift backwards using the same keyword.
 
 Features
-Polygraphic Substitution: Uses multiple substitutions based on a keyword.
-Increased Security: More secure than basic ciphers due to variable shifting.
-Simplicity: Easy to implement and understand.
+✅Polygraphic Substitution: Uses multiple substitutions based on a keyword.
 
-Example
+✅Increased Security: More secure than basic ciphers due to variable shifting.
+
+✅Simplicity: Easy to implement and understand.
+
+🎯Example
 Plaintext: "HELLO"
 Keyword: "KEY"
 
@@ -201,19 +203,19 @@ Introduction to Feistel Network
 
 The Feistel network is a structure designed for building symmetric key block ciphers. It divides input data into two halves and processes them through several rounds of transformation, where the same function is applied for both encryption and decryption.
 
-Key Features of Feistel Network
+ Features of Feistel Network
 
-Simplicity: Uses the same function for both encryption and decryption, making the design efficient.
+✅Simplicity: Uses the same function for both encryption and decryption, making the design efficient.
 
-Divide and Conquer: The input data is split into two parts, facilitating easier manipulation and transformation.
+✅Divide and Conquer: The input data is split into two parts, facilitating easier manipulation and transformation.
 
-Symmetric Operation: The same keys are used for both processes, which underscores its symmetric nature.
+✅Symmetric Operation: The same keys are used for both processes, which underscores its symmetric nature.
 
-Reversible: The Feistel structure ensures that if you can encrypt, you can also decrypt, utilizing the same function with different key arrangements.
+✅Reversible: The Feistel structure ensures that if you can encrypt, you can also decrypt, utilizing the same function with different key arrangements.
 
-Security: It allows for a complex key schedule and multiple rounds, increasing the difficulty of cryptanalysis.
+✅Security: It allows for a complex key schedule and multiple rounds, increasing the difficulty of cryptanalysis.
 
-How It Works
+📌How It Works
 
 Input Splitting: The plaintext (input data) is divided into two halves, typically called the left half (L) and the right half (R).
 
