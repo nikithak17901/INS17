@@ -204,6 +204,7 @@ The Vigenère cipher demonstrates a fundamental cryptographic principle and serv
 Data Encryption Standard (DES)
 
 Features of DES:
+
 ✅Block Cipher: Operates on 64-bit blocks of data.
 ✅Key Length: Uses a 56-bit key (64 bits including parity bits).
 ✅Feistel Structure: Reversible process for encryption and decryption using the same algorithm.
