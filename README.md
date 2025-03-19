@@ -350,15 +350,17 @@ Key Generation:
 
 p=61p = 61p=61, q=53q = 53q=53 → n=3233n = 3233n=3233, ϕ(n)=3120\phi(n) = 3120ϕ(n)=3120
 Public Key: (3233,17)(3233, 17)(3233,17) | Private Key: (3233,2753)(3233, 2753)(3233,2753)
-Encryption:
 
+
+Encryption:
 Message m=65m = 65m=65:
 c≡6517mod  3233≡2790c \equiv 65^{17} \mod 3233 \equiv 2790
 c≡65 
 17
  mod3233≡2790
-Decryption:
 
+ 
+Decryption:
 Retrieve mmm:
 m≡27902753mod  3233≡65m \equiv 2790^{2753} \mod 3233 \equiv 65
 m≡2790 
