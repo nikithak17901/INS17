@@ -1,4 +1,4 @@
-Caesar Cipher - Simple Encryption & Decryption
+1) Caesar Cipher - Simple Encryption & Decryption
 
 This project demonstrates the Caesar Cipher, a basic encryption technique where each letter in the text is shifted by a fixed number of positions in the alphabet.
 
@@ -62,7 +62,7 @@ udymts	5	python
 
 
 
-Hill Cipher 
+2) Hill Cipher 
 
 This is a simple implementation of the Hill Cipher encryption algorithm using NumPy.
 
@@ -93,7 +93,8 @@ Ensure that the key matrix is square (n × n).
 
 
 
-Monoalphabetic-Cipher
+3) Monoalphabetic-Cipher
+
 A simple and user-friendly implementation of the Monoalphabetic Cipher in Python for encryption and decryption of messages using a fixed substitution alphabet.
 Introduction
 The Monoalphabetic Cipher is a type of substitution cipher where each letter in the plaintext is replaced with a corresponding letter from a predefined mapping. This implementation provides an easy-to-use interface for encrypting and decrypting messages.
@@ -117,7 +118,7 @@ ch = 'QWERTYUIOPASDFGHJKLZXCVBNM' (Ciphertext alphabet)
 Each letter from the input is replaced with its corresponding letter from the predefined mapping during encryption, and vice versa during decryption.
 
 
-Playfair-Cipher
+4) Playfair-Cipher
 
 A Python implementation of the Playfair Cipher for encrypting and decrypting text using a key-based 5x5 matrix
 
@@ -157,7 +158,7 @@ Enter the key: monarchy
 Decrypted message: INSTRUMENTSX
 
 
-Vigenère Cipher
+5) Vigenère Cipher
 
 The Vigenère cipher is a method of encrypting alphabetic text using a keyword. It employs a form of polygraphic substitution, shifting each letter in the plaintext based on the corresponding letter in the keyword. This makes it more secure than simple ciphers like the Caesar cipher.
 
@@ -201,7 +202,7 @@ The Vigenère cipher demonstrates a fundamental cryptographic principle and serv
 
 
 
-Data Encryption Standard (DES)
+6) Data Encryption Standard (DES)
 
 Features of DES:
 
