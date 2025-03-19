@@ -99,7 +99,7 @@ A simple and user-friendly implementation of the Monoalphabetic Cipher in Python
 Introduction
 The Monoalphabetic Cipher is a type of substitution cipher where each letter in the plaintext is replaced with a corresponding letter from a predefined mapping. This implementation provides an easy-to-use interface for encrypting and decrypting messages.
 
-Features
+🔹Features
 ✅ Encrypts plaintext messages using a predefined substitution alphabet.
 
 ✅ Decrypts ciphertext messages back to the original plaintext.
@@ -125,7 +125,7 @@ A Python implementation of the Playfair Cipher for encrypting and decrypting tex
 Introduction
 The Playfair Cipher is a digraph substitution cipher that encrypts pairs of letters in plaintext using a 5x5 key matrix. It replaces repeating letters and adjusts odd-length messages by adding filler characters.
 
-Features
+🔹Features
 ✅ Encrypts text using a Playfair matrix.
 
 ✅ Decrypts ciphertext back to its original plaintext.
@@ -171,7 +171,7 @@ For each letter in the plaintext, shift it forward in the alphabet based on the 
 
 Decryption: Shift backwards using the same keyword.
 
-Features
+🔹Features
 ✅Polygraphic Substitution: Uses multiple substitutions based on a keyword.
 
 ✅Increased Security: More secure than basic ciphers due to variable shifting.
@@ -204,7 +204,7 @@ The Vigenère cipher demonstrates a fundamental cryptographic principle and serv
 
 6) Data Encryption Standard (DES)
 
-Features of DES:
+🔹Features of DES:
 
 ✅Block Cipher: Operates on 64-bit blocks of data.
 
@@ -308,7 +308,7 @@ This overview captures the key elements of DES. While it's a foundational symmet
 
 RSA is a public-key cryptographic system used for secure data transmission and digital signatures, based on the difficulty of factoring large prime numbers.
  
-Features:
+🔹Features:
 
 ✅Public Key: Uses a pair of keys (public and private).
 
