@@ -206,9 +206,13 @@ Data Encryption Standard (DES)
 Features of DES:
 
 ✅Block Cipher: Operates on 64-bit blocks of data.
+
 ✅Key Length: Uses a 56-bit key (64 bits including parity bits).
+
 ✅Feistel Structure: Reversible process for encryption and decryption using the same algorithm.
+
 ✅Multiple Rounds: Involves 16 rounds of processing for added security.
+
 ✅Symmetric Key Algorithm: Same key for both encryption and decryption.
 
 📌How DES Works:
