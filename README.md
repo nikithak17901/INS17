@@ -200,27 +200,99 @@ Encrypted message: "RIJVS"
 The Vigenère cipher demonstrates a fundamental cryptographic principle and serves as an excellent introduction to more advanced encryption techniques.
 
 
-Introduction to Feistel Network 
 
-The Feistel network is a structure designed for building symmetric key block ciphers. It divides input data into two halves and processes them through several rounds of transformation, where the same function is applied for both encryption and decryption.
+Data Encryption Standard (DES)
+Features of DES:
+✅Block Cipher: Operates on 64-bit blocks of data.
+✅Key Length: Uses a 56-bit key (64 bits including parity bits).
+✅Feistel Structure: Reversible process for encryption and decryption using the same algorithm.
+✅Multiple Rounds: Involves 16 rounds of processing for added security.
+✅Symmetric Key Algorithm: Same key for both encryption and decryption.
 
- Features of Feistel Network
+📌How DES Works:
 
-✅Simplicity: Uses the same function for both encryption and decryption, making the design efficient.
+Initial Permutation (IP): The 64-bit plaintext undergoes a predefined rearrangement.
+Splitting: The data is divided into two halves: Left half L0L_0L 
+0
+​
+  and Right half R0R_0R 
+0
+​
+  (each 32 bits).
+Rounds (16 Total):
+Generate a subkey KiK_iK 
+i
+​
+  for each round.
+Apply the round function FFF on Ri−1R_{i-1}R 
+i−1
+​
+  using KiK_iK 
+i
+​
+ .
+XOR the output with Li−1L_{i-1}L 
+i−1
+​
+  to get the new left half.
+Swap halves (except for the last round).
+Final Permutation (FP): Apply another permutation to produce ciphertext.
+Example:
 
-✅Divide and Conquer: The input data is split into two parts, facilitating easier manipulation and transformation.
+Plaintext: 01234567 (Binary: 0011000000110010001100010011001100110100001101000011010100110111)
+Key: 0001001100110100010101110111100110011011101111001101111111110001
+Initial Permutation (IP): (This step would rearrange bits; assume it’s done.)
 
-✅Symmetric Operation: The same keys are used for both processes, which underscores its symmetric nature.
+Split Data:
 
-✅Reversible: The Feistel structure ensures that if you can encrypt, you can also decrypt, utilizing the same function with different key arrangements.
+L0=00110000L_0 = 00110000L 
+0
+​
+ =00110000
+R0=00110001R_0 = 00110001R 
+0
+​
+ =00110001
+Round 1:
 
-✅Security: It allows for a complex key schedule and multiple rounds, increasing the difficulty of cryptanalysis.
+Assume K1=11110000K_1 = 11110000K 
+1
+​
+ =11110000.
+Calculate F(R0,K1)F(R_0, K_1)F(R 
+0
+​
+ ,K 
+1
+​
+ ) → Assuming it results in 00000001.
+New values:
+L1=R0=00110001L_1 = R_0 = 00110001L 
+1
+​
+ =R 
+0
+​
+ =00110001
+R1=L0⊕F(R0,K1)=00110000⊕00000001=00110001R_1 = L_0 \oplus F(R_0, K_1) = 00110000 \oplus 00000001 = 00110001R 
+1
+​
+ =L 
+0
+​
+ ⊕F(R 
+0
+​
+ ,K 
+1
+​
+ )=00110000⊕00000001=00110001
+Repeat for 15 more rounds.
 
-📌How It Works
+Final Permutation (FP): Rearrange to get the ciphertext (assume 11010101).
 
-Input Splitting: The plaintext (input data) is divided into two halves, typically called the left half (L) and the right half (R).
-
-Rounds: The Feistel network operates through multiple rounds (typically 16 in DES):
+Summary
+This overview captures the key elements of DES. While it's a foundational symmetric encryption algorithm, be aware that it has known weaknesses, and modern standards like AES are recommended for secure applications.
 
 In each round, a round function (using a subkey) is applied to one half (usually the right half).
 The output of this round function is then combined with the other half (using XOR).
