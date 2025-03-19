@@ -245,6 +245,7 @@ i−1
 Swap halves (except for the last round).
 Final Permutation (FP): Apply another permutation to produce ciphertext.
 
+
 🎯Example:
 
 Plaintext: 01234567 (Binary: 0011000000110010001100010011001100110100001101000011010100110111)
@@ -302,8 +303,66 @@ Final Permutation (FP): Rearrange to get the ciphertext (assume 11010101).
 Summary
 This overview captures the key elements of DES. While it's a foundational symmetric encryption algorithm, be aware that it has known weaknesses, and modern standards like AES are recommended for secure applications.
 
-In each round, a round function (using a subkey) is applied to one half (usually the right half).
-The output of this round function is then combined with the other half (using XOR).
-The halves are swapped after each round, except in the final round.
 
-Output: After the last round, the two halves are combined to produce the ciphertext.
+7) RSA
+RSA is a public-key cryptographic system used for secure data transmission and digital signatures, based on the difficulty of factoring large prime numbers.
+ 
+Features:
+
+✅Public Key: Uses a pair of keys (public and private).
+
+✅Asymmetric: Different keys for encryption and decryption.
+
+✅Secure: Relies on the challenge of factoring large numbers.
+
+✅Digital Signatures: Can sign messages for authenticity.
+
+
+📌How RSA Works:
+
+Key Generation:
+
+Select two prime numbers ppp and qqq.
+Compute n=p×qn = p \times qn=p×q and ϕ(n)=(p−1)(q−1)\phi(n) = (p-1)(q-1)ϕ(n)=(p−1)(q−1).
+Choose eee (e.g., 17) and find ddd such that d≡e−1mod  ϕ(n)d \equiv e^{-1} \mod \phi(n)d≡e 
+−1
+ modϕ(n).
+Encryption:
+
+To encrypt a message mmm:
+c≡memod  nc \equiv m^e \mod n
+c≡m 
+e
+ modn
+Decryption:
+
+To decrypt ccc:
+m≡cdmod  nm \equiv c^d \mod n
+m≡c 
+d
+ modn
+
+
+🎯Example:
+
+Key Generation:
+
+p=61p = 61p=61, q=53q = 53q=53 → n=3233n = 3233n=3233, ϕ(n)=3120\phi(n) = 3120ϕ(n)=3120
+Public Key: (3233,17)(3233, 17)(3233,17) | Private Key: (3233,2753)(3233, 2753)(3233,2753)
+Encryption:
+
+Message m=65m = 65m=65:
+c≡6517mod  3233≡2790c \equiv 65^{17} \mod 3233 \equiv 2790
+c≡65 
+17
+ mod3233≡2790
+Decryption:
+
+Retrieve mmm:
+m≡27902753mod  3233≡65m \equiv 2790^{2753} \mod 3233 \equiv 65
+m≡2790 
+2753
+ mod3233≡65
+ 
+Summary
+RSA enables secure communications using a public/private key pair, with operations based on number theory.
