@@ -202,6 +202,7 @@ The Vigenère cipher demonstrates a fundamental cryptographic principle and serv
 
 
 Data Encryption Standard (DES)
+
 Features of DES:
 ✅Block Cipher: Operates on 64-bit blocks of data.
 ✅Key Length: Uses a 56-bit key (64 bits including parity bits).
@@ -237,7 +238,8 @@ i−1
   to get the new left half.
 Swap halves (except for the last round).
 Final Permutation (FP): Apply another permutation to produce ciphertext.
-Example:
+
+🎯Example:
 
 Plaintext: 01234567 (Binary: 0011000000110010001100010011001100110100001101000011010100110111)
 Key: 0001001100110100010101110111100110011011101111001101111111110001
