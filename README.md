@@ -305,6 +305,7 @@ This overview captures the key elements of DES. While it's a foundational symmet
 
 
 7) RSA
+
 RSA is a public-key cryptographic system used for secure data transmission and digital signatures, based on the difficulty of factoring large prime numbers.
  
 Features:
