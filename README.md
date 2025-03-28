@@ -371,6 +371,7 @@ Summary
 RSA enables secure communications using a public/private key pair, with operations based on number theory.
 
 8)SECURE_KEY
+
 Code Explanation
 1. AES Symmetric Encryption
 Class: SymmetricKeyManager
@@ -422,7 +423,11 @@ Key Revocation: Revokes a test key and verifies its revocation status.
 
 
 Expected Output
+
 Decrypted Message: Secret Message
+
 Generated ECC Key Pair
+
 Shared Secret Match: True
+
 Is Key Revoked? True
