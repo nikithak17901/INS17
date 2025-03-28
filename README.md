@@ -370,7 +370,7 @@ m≡2790
 Summary
 RSA enables secure communications using a public/private key pair, with operations based on number theory.
 
-SECURE_KEY
+8)SECURE_KEY
 Code Explanation
 1. AES Symmetric Encryption
 Class: SymmetricKeyManager
@@ -382,6 +382,7 @@ Working:
 A random 32-byte key is generated.
 The IV is randomly generated (16 bytes) and appended to the ciphertext.
 Padding ensures plaintext fits AES block size (16 bytes).
+
 2. ECC Asymmetric Encryption
 Class: AsymmetricKeyManager
 Methods:
@@ -392,6 +393,7 @@ Working:
 ECC key pairs are generated using SECP384R1.
 The keys are serialized for storage or transmission.
 The keys can be loaded back when needed.
+
 3. Diffie-Hellman Key Exchange
 Class: KeyExchangeManager
 Methods:
@@ -401,6 +403,7 @@ Working:
 Both parties generate their private and public keys.
 Each party exchanges public keys and derives the shared secret.
 The computed secrets match, ensuring a secure key exchange.
+
 4. Key Revocation System
 Class: KeyRevocation
 Methods:
@@ -410,16 +413,14 @@ Working:
 The system maintains a JSON file (revoked_keys.json).
 A key can be revoked by adding its identifier.
 Revocation status is checked against stored records.
-Usage
-Click on the link below to run the sript
-
-https://colab.research.google.com/drive/1k-j6DzNtv_LZKdoGd9Z7LCtIqPH690hu?usp=sharing
 
 Test Cases
 Symmetric Encryption: Encrypts and decrypts a message using AES-256.
 Asymmetric Key Pair Generation: Generates, serializes, and prints an ECC key pair.
 Diffie-Hellman Key Exchange: Computes and verifies shared secrets.
 Key Revocation: Revokes a test key and verifies its revocation status.
+
+
 Expected Output
 Decrypted Message: Secret Message
 Generated ECC Key Pair
